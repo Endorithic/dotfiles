@@ -1,0 +1,20 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-;": "terminal_panel::Toggle",
+        },
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-`": "terminal_panel::Toggle",
+        },
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-;": "editor::ToggleLineNumbers",
+        },
+    },
+]

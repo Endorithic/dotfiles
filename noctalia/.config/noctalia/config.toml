@@ -1,0 +1,116 @@
+config_version = 14
+
+[include]
+files = ["~/.config/noctalia/noctalia-private.toml"]
+
+[accessibility]
+ui_scale = 1.25
+
+[audio]
+enable_overdrive = true
+
+[bar.default]
+background_opacity = 0.0
+capsule = true
+capsule_border = "on_surface"
+capsule_thickness = 0.75
+center = [ "workspaces" ]
+end = [ "media", "tray", "output_volume", "notifications", "control-center" ]
+font_family = "ZedMono NF"
+margin_ends = 0
+padding = 16
+radius = 0
+scale = 1.25
+shadow = false
+start = [ "clock", "group:g1" ]
+thickness = 45
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = "on_surface"
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "cpu", "temp", "ram" ]
+    opacity = 1.0
+    padding = 6.0
+
+[control_center.calendar]
+show_week_numbers = true
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+[lockscreen_widgets]
+enabled = false
+
+[notification]
+background_opacity = 1
+
+[osd]
+background_opacity = 1
+
+[shell]
+font_family = "ZedMono NF"
+time_format = "{:%I:%M %p}"
+
+    [shell.panel]
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+    transparency_mode = "soft"
+    wallpaper_placement = "floating"
+
+    [shell.screen_corners]
+    size = 100
+
+[theme]
+custom_palette = "endo"
+mode = "dark"
+shell_mode = "dark"
+source = "custom"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "qt" ]
+
+[wallpaper]
+directory = "/home/endo/pictures/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/endo/pictures/wallpapers/wallhaven-lydogq.png"
+
+    [wallpaper.last]
+    path = "/home/endo/pictures/wallpapers/wallhaven-lydogq.png"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/endo/pictures/wallpapers/wallhaven-lydogq.png"
+
+[widget.clock]
+format = "{:%I:%M:%S %p}"
+
+[widget.cpu]
+visualization = "none"
+
+[widget.media]
+max_length = 300
+title_scroll = "on_hover"
+
+[widget.output_volume]
+font_weight = 700
+
+[widget.ram]
+visualization = "none"
+
+[widget.temp]
+visualization = "none"
+
+[widget.workspaces]
+empty_color = "tertiary"
+font_weight = 700
