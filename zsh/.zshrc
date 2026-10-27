@@ -10,6 +10,7 @@ PROMPT='%F{cyan}%n@%m %F{green}%~ %F{magenta}${vcs_info_msg_0_}%F{yellow}:3 %f'
 # Define aliases
 alias ls="eza -la --icons=always --color=auto"
 alias reload="source ~/.zshrc"
+alias cargo-install="cargo install --path . --root ~/.local/"
 
 # Add stuff to path
 export PATH="$HOME/.local/bin:$PATH"
